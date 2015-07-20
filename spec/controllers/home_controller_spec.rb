@@ -27,9 +27,5 @@ RSpec.describe HomeController, :type => :controller do
       get :show
       expect(response).to render_template("show")
     end
-     it "Returns json" do
-      get :show
-      response.header['Content-Type'].should include 'text/javascript'
-    end
   end
 end
