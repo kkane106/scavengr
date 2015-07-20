@@ -5,6 +5,7 @@ class HomeController < ApplicationController
 
 	def json
 		content_type :json
-		return {:json => ["test1","test2","test3"]}.to_json
+		@json = {:json => ["test1","test2","test3"]}.to_json
+		return @json
 	end
 end
