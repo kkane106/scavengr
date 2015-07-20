@@ -5,6 +5,6 @@ class HomeController < ApplicationController
 
 	def show
 		@json = {:json => ["test1","test2","test3"]}.to_json
-		return @json
+		render json: @json
 	end
 end

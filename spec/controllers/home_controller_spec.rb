@@ -27,5 +27,11 @@ RSpec.describe HomeController, :type => :controller do
       get :show
       expect(response).to render_template("show")
     end
+    it "should return json" do
+      get :show
+      expect(response).to be_success
+      body = JSON.parse(response.body)
+      expect(body).to include("json")
+    end
   end
 end
