@@ -2,7 +2,7 @@
 
 A scavenger hunt app.
 
-RoR with postgreSQL, rspec test coverage, hosted on Heroku. Front-End design will incorporate javaScript, jQuery and Bootstrap CSS. [ScavengerIOS] is a complimentary mobile app created with Swift.
+RoR with postgreSQL, rspec test coverage, hosted on Heroku. Front-End design will incorporate javaScript, jQuery and Bootstrap CSS. [ScavengrIOS] is a complimentary mobile app created with Swift.
 
 [heroku]
 
