@@ -9,6 +9,15 @@ group :development, :test do
 	gem 'faker'
 end
 
+# Access long/lat more easily from GMaps API --> https://github.com/alexreisner/geocoder
+gem 'geocoder'
+
+# Access Google Places API --> https://github.com/marceldegraaf/google_places
+gem 'google_places'
+
+# Create waypoints on GoogleMap --> https://github.com/apneadiving/Google-Maps-for-Rails
+gem 'gmaps4rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use postgresql as the database for Active Record
