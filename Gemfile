@@ -9,6 +9,9 @@ group :development, :test do
 	gem 'faker'
 end
 
+# Include underscore.js
+gem 'underscore-rails'
+
 # Access long/lat more easily from GMaps API --> https://github.com/alexreisner/geocoder
 gem 'geocoder'
 

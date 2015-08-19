@@ -11,13 +11,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150720195931) do
+ActiveRecord::Schema.define(version: 20150818124908) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "tests", force: true do |t|
-    t.string   "test"
+  create_table "locations", force: true do |t|
+    t.float    "lat"
+    t.float    "long"
+    t.string   "location_name"
+    t.string   "clue"
+    t.string   "task"
+    t.integer  "scavenger_hunt_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "locations", ["scavenger_hunt_id"], name: "index_locations_on_scavenger_hunt_id", using: :btree
+
+  create_table "playgrounds", force: true do |t|
+    t.string   "name"
+    t.string   "sport"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "street_number"
+    t.string   "route"
+    t.string   "city"
+    t.string   "country"
+    t.string   "postal_code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "gmaps"
+  end
+
+  create_table "scavenger_hunts", force: true do |t|
+    t.string   "name"
+    t.string   "created_by"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

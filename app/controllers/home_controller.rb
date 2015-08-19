@@ -7,4 +7,5 @@ class HomeController < ApplicationController
 		@json = {:json => ["test1","test2","test3"]}.to_json
 		render json: @json
 	end
+
 end
